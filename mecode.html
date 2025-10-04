@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая страница</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('goluboe-nebo-fon-vselennoi.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        h1 {
+            color: #7d7d7d;
+            margin: 20px;
+        }
+
+        p {
+            color: #afafaf;
+            margin: 20px;
+        }
+
+        .highlight {
+            color: #18517c;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #d474c4;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        .center-block {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #message {
+            text-align: center;
+            font-size: 18px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Hi! I'm learning frontend</h1>
+        <p>My name is <span class="highlight">September Club</span>.</p>
+        <p>This is my first page.</p>
+    </div>
+
+    <div class="center-block">
+        <img src="photo.jpg.png" alt="My photo" width="300">
+        <br>
+        <button onclick="changeText()">Click me</button>
+    </div>
+
+    <p id="message"></p>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").innerText = "Yaaay! You clicked the button!";
+        }
+    </script>
+</body>
+</html>
